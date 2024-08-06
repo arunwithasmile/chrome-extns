@@ -1,0 +1,16 @@
+{
+    "name": "Ayra UI",
+    "description": "Extension to fix UI layouts in Ayra Social",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://ayra.social/*"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
