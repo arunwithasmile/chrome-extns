@@ -1,0 +1,241 @@
+body.asp-wiki-minify.skin--responsive {
+    --color-base: #555;
+    --color-progressive: #667ead;
+    --color-box-inset: #f7f7f7;
+    --border-color-subtle: #d5d7da;
+
+    .vector-body-before-content {
+        display: none;
+    }
+
+    .mw-header {
+        padding-top: 1.5rem;
+        align-items: end;
+    }
+
+    .cdx-typeahead-search__menu.cdx-menu {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+        top: 40px;
+        width: calc(100% + 50px);
+    }
+
+    .vector-column-start,
+    .vector-column-end {
+        opacity: 0.7;
+    }
+
+    .mw-logo {
+        min-width: unset;
+        margin-left: 14px;
+
+        .mw-logo-icon {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .mw-logo-wordmark,
+        .mw-logo-tagline {
+            width: 70% !important;
+            margin: unset;
+        }
+    }
+
+    .mw-body-content h2 {
+        font-family: sans-serif;
+    }
+
+    .vector-typeahead-search-container {
+        margin-left: 3rem;
+        max-width: 86%;
+
+        .cdx-typeahead-search {
+            margin-left: 0;
+
+            .cdx-search-input--has-end-button {
+                border: none;
+                border-radius: 8px;
+                background-color: var(--color-box-inset);
+                padding-block: 4px;
+
+                .cdx-search-input__input-wrapper {
+                    margin: 1px;
+
+                    .cdx-text-input--has-start-icon {
+                        border-radius: 8px
+                    }
+                }
+
+                input[type="search"] {
+                    background-color: var(--color-box-inset);
+                    padding-left: 1.25rem;
+                    border: none;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .cdx-text-input__start-icon {
+                    display: none;
+                }
+
+                .cdx-search-input__end-button {
+                    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20" fill="%23000000"><path d="M12.2 13.6a7 7 0 111.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1010 0A5 5 0 003 8"/></svg>');
+                    mask-size: max(1.25rem, 20px);
+                    mask-repeat: no-repeat;
+                    mask-position: center;
+                    background-color: var(--color-base);
+                    opacity: var(--opacity-icon-placeholder, .51);
+
+                    &:hover {
+                        background-color: #000000;
+                        opacity: 1;
+                    }
+
+                    margin: 0;
+                    padding-inline: 0;
+                }
+
+                &:has(.cdx-text-input__input:enabled:focus) {
+                    box-shadow: inset 0 0 0 1px var(--box-shadow-color-progressive--focus, #36c);
+                }
+            }
+        }
+    }
+
+    .vector-page-titlebar::after {
+        display: none;
+    }
+
+    #p-lang-btn {
+        background-color: #f7f7f7;
+        padding: 2px;
+        translate: -16px calc(100% - 2.5px);
+        border-radius: 4px;
+
+        #p-lang-btn-label {
+            padding-inline: 5px;
+
+            .vector-icon {
+                margin-right: 0;
+                background-size: 16px;
+                mix-blend-mode: luminosity;
+            }
+
+            .vector-dropdown-label-text {
+                display: none;
+            }
+        }
+
+        .vector-dropdown-label.cdx-button--action-progressive.cdx-button--weight-quiet::after {
+            display: none;
+        }
+    }
+
+    .vector-page-toolbar-container {
+        box-shadow: 0 1px var(--border-color-subtle);
+
+        nav a {
+            color: #999;
+        }
+
+        #right-navigation {
+            margin-right: 36px;
+
+            nav {
+
+                #vector-page-tools-dropdown {
+                    margin-bottom: 0;
+                    margin-top: -4px;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 4px;
+                    background-color: #f7f7f7;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '\2699';
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        inset: 0;
+                        font-size: 22px;
+                    }
+
+                    .vector-dropdown-checkbox {
+                        width: 36px;
+                    }
+
+                    #vector-page-tools-dropdown-label {
+                        padding: 0;
+                        height: 100%;
+                        width: 100%;
+
+                        .vector-dropdown-label-text,
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .mw-parser-output {
+        figure[typeof~='mw:File/Thumb'] {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0.5px 1.5px rgb(0 0 0 / 50%);
+
+            > :not(figcaption) .mw-file-element {
+                margin: 0;
+                border: 0;
+                max-width: 100%;
+            }
+
+            >figcaption {
+                border: none;
+                padding: 1rem;
+                background-color: var(--background-color-interactive);
+            }
+        }
+
+        table.biota.infobox {
+            padding: 0;
+            border: 0;
+            border-spacing: 0;
+            border-radius: 12px;
+
+            tr {
+                background-color: transparent !important;
+            }
+
+            th {
+                padding-block: 6px;
+                background-color: transparent !important;
+
+                div {
+                    display: none;
+                }
+            }
+
+            td {
+                padding: 0;
+                color: var(--color-base, #202122);
+
+                .tsingle {
+                    margin: 0;
+                }
+
+                &:not(:has(img)) {
+                    padding-inline: 1rem;
+                }
+            }
+        }
+    }
+}
