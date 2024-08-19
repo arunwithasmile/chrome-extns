@@ -1,0 +1,81 @@
+body.asp-wiki-minify.skin--responsive {
+    table {
+        border: 0;
+        border-spacing: 0;
+        border-radius: 12px;
+
+        &.nomobile[role="presentation"] {
+            box-shadow: 0 1px 8px rgb(0 0 0 / 15%);
+            padding: 1rem 0.5rem 1.5rem !important;
+        }
+
+        &.infobox {
+            padding: 0;
+            overflow: hidden;
+            box-shadow: 0 1px 8px rgb(0 0 0 / 15%);
+
+            tr {
+                background-color: transparent !important;
+
+                &:first-of-type:not(:has(img)) {
+                    display: none;
+                }
+            }
+
+            th {
+                padding-block: 6px;
+                background-color: transparent !important;
+
+                div {
+                    display: none;
+                }
+            }
+
+            td,
+            th {
+                color: var(--color-base, #202122);
+
+                &:has(.thumb),
+                &.infobox-image {
+                    padding: 0;
+
+                    .infobox-caption {
+                        padding: 1rem;
+                    }
+                }
+
+                &:not(:has(img)) {
+                    padding-inline: 1rem;
+                }
+
+                &.infobox-image .mw-default-size img {
+                    width: 100%;
+                    height: unset;
+                }
+
+                .tsingle {
+                    margin: 0;
+                }
+            }
+
+            .center:has(.multiimageinner) {
+                .trow {
+                    justify-content: space-between;
+                    margin-bottom: 4px;
+
+                    .tsingle {
+                        * {
+                            display: block;
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

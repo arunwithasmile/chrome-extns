@@ -9,7 +9,11 @@
                 "https://*.wikipedia.org/*"
             ],
             "css": [
-                "style.css"
+                "style.css",
+                "tables.css",
+                "icons.css",
+                "search-bar.css",
+                "customisation.css"
             ],
             "js": [
                 "content.js"

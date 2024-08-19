@@ -1,0 +1,12 @@
+body.asp-wiki-minify.skin--responsive {
+    .vector-icon.mw-ui-icon-wikimedia-appearance {
+        background-image: none;
+        translate: -1.5px -1.5px;
+    }
+
+    .vector-menu#p-vector-user-menu-overflow {
+        .vector-menu-content-list {
+            display: block;
+        }
+    }
+}

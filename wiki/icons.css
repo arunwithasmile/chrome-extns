@@ -1,0 +1,29 @@
+body.asp-wiki-minify.skin--responsive {
+    .vector-icon:not(.material-symbols-outlined) {
+        opacity: 0.5;
+
+        &.mw-ui-icon-listBullet,
+        &.mw-ui-icon-menu {
+            opacity: 0.2;
+        }
+    }
+
+    .vector-dropdown:hover .vector-icon:not(.material-symbols-outlined) {
+
+        &.mw-ui-icon-listBullet,
+        &.mw-ui-icon-menu {
+            opacity: 0.4;
+        }
+    }
+
+    .mw-echo-notification-badge-nojs::after {
+        padding: 0;
+        border-radius: 50%;
+        background-color: #ff7e00;
+        height: 14px;
+        width: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
