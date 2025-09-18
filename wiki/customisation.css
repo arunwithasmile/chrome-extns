@@ -9,4 +9,13 @@ body.asp-wiki-minify.skin--responsive {
             display: block;
         }
     }
+
+    .mw-page-container .mw-page-container-inner {
+
+        .vector-sitenotice-container,
+        .vector-column-start,
+        main.mw-body .vector-column-end {
+            display: none;
+        }
+    }
 }

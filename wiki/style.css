@@ -1,12 +1,14 @@
 body.asp-wiki-minify.skin--responsive {
-    --color-base: #555;
-    --color-emphasized: #444;
-    --color-progressive: #7184aa;
-    --color-visited: #7683ae;
+    --color-base: #404040;
+    --color-emphasized: #2d2d2d;
+    --color-progressive: #415a8a;
+    --color-visited: #415d8a;
     --color-box-inset: #f7f7f7;
     --border-color-subtle: #d5d7da;
 
     --header-margin: 1rem;
+    --font-size-medium: 1rem;
+    letter-spacing: 0.4px;
 
     .material-symbols-outlined {
         font-variation-settings:
@@ -55,11 +57,6 @@ body.asp-wiki-minify.skin--responsive {
         box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
         top: 40px;
         width: calc(100% + 50px);
-    }
-
-    .vector-column-start,
-    .vector-column-end {
-        opacity: 0.7;
     }
 
     .mw-logo {
@@ -201,5 +198,16 @@ body.asp-wiki-minify.skin--responsive {
                 background-color: var(--background-color-interactive);
             }
         }
+    }
+
+    /* Hiding clutter */
+    .box-Multiple_issues {
+        display: none;
+    }
+
+    /* Magify icon */
+    .mw-content-ltr figure[typeof~='mw:File/Thumb']>.mw-file-description::after,
+    .mw-content-ltr figure[typeof~='mw:File/Thumb']>.mw-file-magnify::after {
+        display: none;
     }
 }

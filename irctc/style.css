@@ -1,0 +1,197 @@
+.slanted-div {
+    width: 100%;
+}
+
+.asp-irctc-minify {
+
+    --primary: #214862;
+
+    .h_head1 {
+        text-transform: capitalize;
+
+        a,
+        span {
+            font-size: 1.6rem !important;
+            color: #444 !important;
+        }
+
+        a.search_btn {
+            color: #fff !important;
+            font-weight: normal;
+            vertical-align: unset;
+            width: unset;
+            padding-inline: 22px !important;
+            border-radius: 1rem;
+
+            span {
+                color: #fff !important;
+            }
+        }
+    }
+
+    .h_head2 {
+        display: none;
+    }
+
+    .header-fix {
+        width: 100%;
+        box-shadow: 0 1px 8px rgb(0 0 0 / 20%), 0 1px 2px rgb(0 0 0 / 30%);
+
+        .h_container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .h_main_div {
+                flex-grow: 1;
+
+                [aria-label="Click here to open Daily Deals"],
+                [aria-label="Click here for Alerts"],
+                [aria-label="Click here for Alerts"]+span,
+                [aria-label*="font size"],
+                [aria-label="Click here to set Hindi language"] {
+                    display: none;
+                }
+            }
+
+            .h_logo_left_div,
+            .h_logo_right_div {
+                position: static;
+
+                .h_logo {
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+    :not(app-footer)>.hidden-xs:not(.loginhead, .tbis-box+.row),
+    #disha-placeholder-card,
+    #askDishaSdk {
+        display: none !important;
+    }
+
+    .tbis-box {
+        padding-top: 0;
+
+        .scrollBtm:has(a[href="https://equery.irctc.co.in/"]) {
+            display: none;
+        }
+
+        .jp-form {
+            box-shadow: 0 1px 8px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 35%);
+            border-radius: 2rem;
+            background-color: #fffa;
+            backdrop-filter: blur(12px);
+            padding: 1rem 1rem 2rem;
+
+            label[for="jDate"] {
+                display: none;
+            }
+        }
+    }
+
+    .ui-inputtext,
+    .ui-dropdown,
+    .irmodal input {
+        color: var(--primary) !important;
+        border-radius: 1rem;
+
+        .ui-dropdown-trigger {
+            border-radius: 0 1rem 1rem;
+        }
+    }
+
+    .slanted-div {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+        overflow: unset;
+    }
+
+    .textheading label,
+    .textheading span,
+    .loginhead label,
+    .jp-form .fa,
+    .ui-dropdown .ui-dropdown-label,
+    .ui-float-label label,
+    input[type=checkbox].css-checkbox+label.css-label_c,
+    .modal-title {
+        color: var(--primary) !important;
+    }
+
+    .btn-primary,
+    .train_Search,
+    .search_btn,
+    .ui-dialog-footer .ui-button,
+    .captcha_div {
+        background-color: var(--primary) !important;
+    }
+
+    input[type=checkbox].css-checkbox+label.css-label_c {
+        font-family: Body, Quicksand, sans-serif;
+    }
+
+    #login_header_disable .ui-dialog {
+        height: 90%;
+
+        .ui-dialog-content {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.5rem;
+
+            .loginCloseBtn {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .irmodal {
+                height: 100%;
+
+                >div {
+                    height: 100%;
+
+                    .login-bg {
+                        height: 100%;
+
+                        .modal-content {
+                            box-shadow: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 100%;
+
+                            .modal-header {
+                                border: none;
+                                margin: 0 auto;
+                            }
+
+                            .form-group:has(input[type=password])+.form-group {
+                                padding-bottom: 2rem;
+                            }
+
+                            #captcha {
+                                margin-top: 1rem;
+                            }
+
+                            .multibutton {
+                                border: none;
+
+                                .search_btn {
+                                    background-color: transparent !important;
+                                    color: var(--primary);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ui-autocomplete .ui-autocomplete-panel {
+        border-radius: 10px;
+    }
+}

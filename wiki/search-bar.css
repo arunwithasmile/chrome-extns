@@ -1,7 +1,19 @@
 body.asp-wiki-minify.skin--responsive {
+    header {
+        gap: 0;
+
+        .vector-header-end {
+            justify-content: space-between;
+        }
+    }
+
+    .vector-search-box {
+        max-width: 59.25rem;
+    }
+
     .vector-typeahead-search-container {
-        margin-left: 3rem;
-        max-width: 86%;
+        max-width: 100%;
+        margin-right: 0;
 
         .cdx-typeahead-search {
             margin-left: 0;

@@ -1,0 +1,30 @@
+{
+    "name": "IRCTC Simplify",
+    "description": "Extension to simplify UI layouts in IRCTC",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.irctc.co.in/*"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_title": "Make IRCTC Minimal",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.irctc.co.in/*"
+    ]
+}
